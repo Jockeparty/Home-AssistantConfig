@@ -1,0 +1,16 @@
+- alias: "Krypgrundens luftfuktighet"
+  initial_state: true
+  hide_entity: false
+  trigger:
+    - above: '69'
+      entity_id: sensor.krypgrunden_vid_avfuktaren_humidity
+      platform: numeric_state
+  action:
+    - service: persistent_notification.create
+      data:
+        title: Luftfuktigheten
+        message: har stigit över gränsen
+    - service: notify.pushbullet
+      data_template:
+        title: Luftfuktigheten
+        message: har stigit över gränsen

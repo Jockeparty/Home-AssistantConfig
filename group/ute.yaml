@@ -1,0 +1,10 @@
+Utomhus:
+  view: yes
+  entities:
+    - sensor.ute_framsidan_temperature
+    - sensor.ute_baksidan_temperature
+    - switch.car_heater
+    - switch.outside
+    - light.backyard
+    - light.backyard_livingroom
+    - light.backyard_bedroom

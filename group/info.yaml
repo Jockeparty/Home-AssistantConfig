@@ -1,0 +1,24 @@
+Info:
+  entities:
+    - sensor.garaget_humidity
+    - sensor.garaget_temperature
+    - sensor.krypgrunden_vid_avfuktaren_humidity
+    - sensor.krypgrunden_vid_avfuktaren_temperature
+    - sensor.krypgrunden_bortre_humidity
+    - sensor.krypgrunden_bortre_temperature
+    - sensor.tvattstugan_humidity
+    - sensor.tvattstugan_temperature
+    - sensor.ute_baksidan_temperature
+    - sensor.ute_framsidan_humidity
+    - sensor.ute_framsidan_temperature
+    - sensor.yr_symbol
+    - sensor.avfuktaren_krypgrunden_watt
+    - sensor.avfuktaren_krypgrunden_watt_2
+    - sensor.tradfri_motion_sensor
+    - sensor.illumination_34ce0091de27
+    - sensor.avfuktaren_power
+    - sensor.avfuktaren_power_2
+    - sensor.humidity_158d0001b920b1
+    - sensor.illumination_158d0001e41f7c
+    - sensor.pressure_158d0001b920b1
+    - sensor.temperature_158d0001b920b1

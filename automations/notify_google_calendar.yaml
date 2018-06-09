@@ -1,0 +1,14 @@
+- alias: "Sopbilen"
+  initial_state: true
+  hide_entity: false
+  trigger:
+    platform: state
+    entity_id: calendar.hassdoverstalse
+    to: 'on'
+  action:
+  - service: homeassistant.turn_on
+    entity_id: switch.office
+  - service: notify.pushbullet
+    data_template:
+      title: Sopbilen
+      message: kommer imorgon

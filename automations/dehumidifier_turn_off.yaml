@@ -1,0 +1,14 @@
+- alias: "Turn off dehumidifier"
+  initial_state: true
+  hide_entity: false
+  trigger:
+    - below: '62'
+      entity_id: sensor.krypgrunden_vid_avfuktaren_humidity
+      platform: numeric_state
+  action:
+    - service: homeassistant.turn_off
+      entity_id: switch.avfuktaren
+    - service: notify.pushbullet
+      data_template:
+        title: Luftavfuktaren
+        message: har stannat

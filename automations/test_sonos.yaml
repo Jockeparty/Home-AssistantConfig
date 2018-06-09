@@ -1,0 +1,13 @@
+- alias: 'Sonos test'
+  trigger:
+    platform: state
+    entity_id: input_boolean.mytest
+  action:   
+    # - service: script.sonos_say
+      # data:
+        # sonos_entity: media_player.kitchen
+        # volume: 0.4
+        # message: 'Godmorgon. Det är nu dags att stiga upp. Klockan är 8 och det är 4 grader varmt ute. Vill du ha kaffe?'
+        # delay: '00:00:10'
+    - service: input_boolean.turn_on
+      entity_id: input_boolean.jockejobbat

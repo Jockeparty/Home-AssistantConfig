@@ -1,0 +1,10 @@
+- alias: "Borta"
+  initial_state: false
+  hide_entity: false
+  trigger:
+    platform: time
+    hours: 23
+    minutes: 0
+  action:
+    service: homeassistant.turn_off
+    entity_id: group.evening

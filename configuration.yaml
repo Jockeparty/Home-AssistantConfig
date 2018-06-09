@@ -1,0 +1,136 @@
+homeassistant:
+  name: Home
+  latitude: !secret Homelatitude
+  longitude: !secret Homelongitude
+  elevation: 38
+  unit_system: metric
+  time_zone: Europe/Stockholm
+  customize: !include_dir_merge_named customize
+
+# Enables the frontend
+frontend:
+
+# Enables configuration UI
+config:
+
+http:
+  api_password: !secret http_password
+  
+# Uncomment this if you are using SSL/TLS, running in Docker container, etc.
+  # base_url: example.duckdns.org:8123
+
+updater:
+  reporting: False
+  
+# recorder:
+  # purge_keep_days: 2
+  # exclude:
+    # domains:
+      # - automation
+      # - weblink
+      # - updater
+    # entities:
+      # - sun.sun # Don't record sun data
+      # - sensor.last_boot # Comes from 'systemmonitor' sensor platform
+      # - sensor.date
+
+# Discover some devices automatically
+discovery:
+
+# Allows you to issue voice commands from the frontend in enabled browsers
+conversation:
+
+# Enables support for tracking state changes over time
+history:
+  # exclude:
+    # domains:
+      # - automation
+      # - weblink
+      # - updater
+    # entities:
+      # - sensor.last_boot
+      # - sensor.date
+
+# View all events in a logbook
+logbook:
+
+# Enables a map showing the location of tracked devices
+map:
+
+# Track the sun
+sun:
+
+
+sensor: !include_dir_merge_list sensors
+device_tracker: !include_dir_merge_list trackers
+group: !include_dir_merge_named group
+automation: !include_dir_merge_list automations
+script: !include_dir_merge_named scripts
+input_boolean: !include input/input_boolean.yaml
+notify: !include notify.yaml
+media_player: !include media_players.yaml
+
+
+# Text to speech
+tts:
+  - platform: google
+    language: 'sv'
+    cache: True
+
+ifttt:
+  key: !secret ifttt
+
+zone 1:
+  name: Minerva
+  latitude: !secret schoollatitude
+  longitude: !secret schoollongitude
+  radius: 200
+  icon: mdi:school
+
+zone 2:
+  name: Jockes jobb
+  latitude: !secret jobblatitude
+  longitude: !secret jobblongitude
+  radius: 100
+  icon: mdi:work
+
+# This will override the default home zone
+zone 3:
+  name: Hemma
+  latitude: !secret Homelatitude
+  longitude: !secret Homelongitude
+  radius: 100
+
+zone 4:
+  name: Sjukhuset
+  latitude: !secret work2latitude 
+  longitude: !secret work2longitude
+  radius: 200
+  icon: mdi:work
+
+emulated_hue:
+  type: google_home
+
+google:
+  client_id: !secret googleId
+  client_secret: !secret googlesecret
+
+
+
+xiaomi_aqara:
+  discovery_retry: 5
+  gateways:
+    - key: !secret xiaomi
+
+#panel_iframe:
+#  configurator:
+#    title: Configurator
+#    icon: mdi:wrench
+#    url: http://192.168.1.67:3218
+
+influxdb:
+  host: 192.168.1.80
+
+volvooncall:
+  username: !secret volvomail
+  password: !secret volvo

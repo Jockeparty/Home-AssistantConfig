@@ -1,0 +1,10 @@
+- platform: unifi
+  host: 192.168.1.80
+  port: 8443
+  username: !secret unifimail
+  password: !secret unifi
+  verify_ssl: False
+  consider_home: 180
+  new_device_defaults:
+      track_new_devices: False
+      hide_if_away: False

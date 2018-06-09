@@ -1,0 +1,10 @@
+- alias: "Testar rörelse detektor"
+  initial_state: false
+  hide_entity: true
+  trigger:
+    platform: state
+    entity_id: switch.movement_1
+    to: 'on'
+  action:
+    service: homeassistant.turn_on
+    entity_id: switch.office

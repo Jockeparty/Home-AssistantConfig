@@ -1,0 +1,21 @@
+spotifydemo:
+    alias: 'Spotify on echo'
+    sequence:
+      - service: media_player.select_source
+        data:
+          entity_id: media_player.spotify
+          source: Kitchen Speakers
+      - service: media_player.play_media
+        data: 
+          entity_id: media_player.spotify
+          media_content_type: playlist
+        data_template:
+          media_content_id: >
+            {%- set plists = ["https://open.spotify.com/user/jockeparty1/playlist/1oG6xor7dQnHUvDKUqd68j", 
+              "spotify:user:spotify:playlist:37i9dQZF1DWVyfHu8SNQgH",
+              "spotify:user:spotify:playlist:37i9dQZF1DX9OTdoPfdJpF",
+              "spotify:user:spotify:playlist:37i9dQZF1DX0N8QTiMHLoT",
+              "spotify:user:spotify:playlist:37i9dQZF1DWZtZ8vUCzche",
+               ] -%}
+              {% set pindex =  (range(0, (plists | length - 1 ) )|random) -%}
+              {{ plists[pindex] }}

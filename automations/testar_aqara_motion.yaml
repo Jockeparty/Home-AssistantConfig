@@ -1,0 +1,13 @@
+- alias: Testar rörelse detektor Aqara
+  initial_state: false
+  hide_entity: false
+  trigger:
+    platform: state
+    entity_id: binary_sensor.motion_sensor_158d0001e41f7c
+    to: 'on'
+  action:
+  - service: homeassistant.turn_on
+    entity_id: switch.office
+  - delay: 0:02:00
+  - service: homeassistant.turn_off
+    entity_id: switch.office

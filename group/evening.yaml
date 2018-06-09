@@ -1,0 +1,11 @@
+Evening:
+  view: no
+  entities:
+    - switch.outside
+    - switch.upstairs
+    - switch.kitchen
+    - switch.office
+    - switch.bedroom
+    - switch.laundry
+    - switch.livingroom_window
+    - light.backyard

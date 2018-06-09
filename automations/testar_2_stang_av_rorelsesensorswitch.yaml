@@ -1,0 +1,11 @@
+- alias: "Testar 2 stäng av rörelsesensorsswitch"
+  initial_state: true
+  hide_entity: true
+  trigger:
+    platform: state
+    entity_id: switch.movement_1
+    to: 'on'
+  action:
+  - delay: 0:00:10
+  - service: homeassistant.turn_off
+    entity_id: switch.movement_1

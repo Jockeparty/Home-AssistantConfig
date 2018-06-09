@@ -1,0 +1,17 @@
+alias: Välkommen hem Jocke
+initial_state: true
+trigger:
+  - platform: state
+    entity_id: device_tracker.galaxya32016
+    from: 'not_home'
+    to: 'home'
+    
+action:
+  - wait_template: "{{ states('binary_sensor.door_window_sensor_158d0001f388e2') == 'on' }}"
+    timeout: 00:05:00 
+  - service: script.sonos_say
+    data:
+      sonos_entity: media_player.kitchen
+      volume: 0.4
+      message: 'Välkommen hem Jocke'
+      delay: '00:00:04'

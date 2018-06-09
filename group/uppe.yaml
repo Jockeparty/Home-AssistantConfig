@@ -1,0 +1,7 @@
+Uppe:
+  view: yes
+  entities:
+    - switch.upstairs
+    - switch.linus_window
+    - switch.lucas_window
+    - switch.grabbarnas_tvstret

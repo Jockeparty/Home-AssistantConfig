@@ -1,0 +1,10 @@
+
+  mytest:
+    name: Test knapp
+    initial: off
+    icon: mdi:car
+      
+  jockejobbat:
+    name: Jocke jobbat idag
+    initial: off
+   

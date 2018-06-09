@@ -1,0 +1,43 @@
+- alias: "Ytterdörren knapp kort"
+  initial_state: True
+  hide_entity: True
+  trigger:
+    platform: event
+    event_type: click
+    event_data:
+      entity_id: binary_sensor.switch_158d00019d5855
+      click_type: single
+  action:
+    service: homeassistant.turn_off
+    entity_id: group.inner_lights
+
+- alias: "Ytterdörren knapp lang"
+  initial_state: True
+  hide_entity: True
+  trigger:
+    platform: event
+    event_type: click
+    event_data:
+      entity_id: binary_sensor.switch_158d00019d5855
+      click_type: long_click_press
+  action:
+    service: script.sonos_say
+    data:
+      sonos_entity: media_player.living_room
+      volume: 0.4
+      message: 'Good night!'
+      delay: '00:00:05'
+      
+- alias: "Ytterdörren knapp dubbel"
+  initial_state: True
+  hide_entity: True
+  trigger:
+    platform: event
+    event_type: click
+    event_data:
+      entity_id: binary_sensor.switch_158d00019d5855
+      click_type: double
+  action:
+    service: tts.google_say
+    data:
+      message: 'May the Force be with you.'

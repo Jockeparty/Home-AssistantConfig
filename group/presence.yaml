@@ -1,0 +1,9 @@
+Narvaro:
+  view: Yes
+  entities:
+    - sensor.tradfri_motion_sensor
+    - switch.forradet_dorrsensor
+    - switch.garageporten_dorrsensor
+    - switch.garaget_dorrsensor
+    - switch.movement_1
+    - binary_sensor.motion_sensor_158d0001e41f7c

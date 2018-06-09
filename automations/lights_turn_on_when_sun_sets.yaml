@@ -1,0 +1,10 @@
+- alias: "Turn on light when sun sets"
+  initial_state: true
+  hide_entity: false
+  trigger:
+    platform: sun
+    event: sunset
+    offset: -01:30:00
+  action:
+    service: homeassistant.turn_on
+    entity_id: group.evening

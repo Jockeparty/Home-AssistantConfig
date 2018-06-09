@@ -1,0 +1,4 @@
+- platform: google_maps
+  username: !secret hassmail2
+  password: !secret hassmail
+

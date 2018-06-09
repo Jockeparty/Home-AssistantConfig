@@ -1,0 +1,12 @@
+Alla inre lampor:
+  view: no
+  entities:
+    - switch.livingroom_lamp
+    - light.stairs
+    - light.hallway
+    - light.kitchen_table
+    - light.livingroom_spotlights
+    - light.gateway_light_34ce0091de27
+    - switch.kaffebryggaren
+    - switch.linus_window
+    - switch.lucas_window

@@ -1,0 +1,8 @@
+binary_sensor.switch_158d00016d9d52:
+  friendly_name: Thereses knapp
+ 
+binary_sensor.switch_158d00019d5855:
+  friendly_name: Ytterdorren knapp
+  
+binary_sensor.door_window_sensor_158d0001f388e2:
+  friendly_name: Sido dörr

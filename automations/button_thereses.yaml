@@ -1,0 +1,60 @@
+- alias: "Therese knapp kort tryck"
+  initial_state: True
+  hide_entity: True
+  trigger:
+    platform: event
+    event_type: click
+    event_data:
+      entity_id: binary_sensor.switch_158d00016d9d52
+      click_type: single
+  action:
+    - service: homeassistant.turn_off
+      entity_id: group.night_mode
+    - service: media_player.media_stop
+      entity_id: media_player.kitchen
+    - service: media_player.media_stop
+      entity_id: media_player.livingroom
+    - service: script.sonos_say
+      data:
+        sonos_entity: media_player.livingroom
+        volume: 0.3
+        message: 'Sov gott'
+        delay: '00:00:02'
+        
+- alias: "Therese knapp langt tryck"
+  initial_state: True
+  hide_entity: True
+  trigger:
+    platform: event
+    event_type: click
+    event_data:
+      entity_id: binary_sensor.switch_158d00016d9d52
+      click_type: long_click_press
+  action:
+    # - service: homeassistant.turn_off
+      # entity_id: group.night_mode
+    - service: script.sonos_say
+      data:
+        sonos_entity: media_player.livingroom
+        volume: 0.3
+        message: 'Lång tryckning'
+        delay: '00:00:02'
+        
+- alias: "Therese knapp dubbel tryck"
+  initial_state: True
+  hide_entity: True
+  trigger:
+    platform: event
+    event_type: click
+    event_data:
+      entity_id: binary_sensor.switch_158d00016d9d52
+      click_type: double
+  action:
+    # - service: homeassistant.turn_off
+      # entity_id: group.night_mode
+    - service: script.sonos_say
+      data:
+        sonos_entity: media_player.livingroom
+        volume: 0.3
+        message: 'Dubbel tryckning'
+        delay: '00:00:02'

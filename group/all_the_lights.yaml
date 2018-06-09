@@ -1,0 +1,14 @@
+Alla lampor:
+  view: no
+  entities:
+    - switch.kitchen
+    - switch.office
+    - switch.bedroom
+    - switch.laundry
+    - switch.livingroom_window
+    - switch.livingroom_lamp
+    - light.stairs
+    - light.hallway
+    - light.kitchen_table
+    - light.livingroom_spotlights
+    - light.gateway_light_34ce0091de27

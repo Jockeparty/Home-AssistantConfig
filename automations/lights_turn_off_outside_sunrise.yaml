@@ -1,0 +1,13 @@
+- alias: "Turn off outside light when sunrise"
+  initial_state: true
+  hide_entity: false
+  trigger:
+    platform: sun
+    event: sunrise
+  action:
+  - service: homeassistant.turn_off
+    entity_id: switch.outside
+  - service: homeassistant.turn_off
+    entity_id: light.backyard
+  - service: homeassistant.turn_off
+    entity_id: switch.upstairs

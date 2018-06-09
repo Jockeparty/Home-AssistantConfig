@@ -1,0 +1,24 @@
+sensor.illumination_34ce0091de27:
+  friendly_name: Gateway ljussensor
+  
+sensor.temperature_158d0001b920b1:
+  friendly_name: Linus Temp
+  
+sensor.pressure_158d0001b920b1:
+  friendly_name: Linus Lufttryck
+  
+sensor.avfuktaren_power:
+  friendly_name: Avfuktaren Watt
+  
+sensor.avfuktaren_power_2:
+  friendly_name: Avfuktaren kWh
+  
+sensor.speedtest_download:
+  friendly_name: Download Rate
+  
+sensor.speedtest_ping:
+  friendly_name: Last Ping
+  
+sensor.speedtest_upload:
+  friendly_name: Upload Rate
+  

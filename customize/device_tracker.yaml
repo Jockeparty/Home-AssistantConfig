@@ -1,0 +1,12 @@
+!secret googletracker1:
+  friendly_name: Jocke
+  
+!secret googletracker2:
+  friendly_name: Linus
+  
+device_tracker.galaxya32016:
+  friendly_name: Jockes mobil
+  
+!secret regnr:
+  friendly_name: Bilen
+  

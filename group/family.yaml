@@ -1,0 +1,7 @@
+Narvaro:
+  entities:
+    - device_tracker.galaxya32016
+    - !secret googletracker1
+    - !secret googletracker2
+    - !secret regnr
+    - device_tracker.therese

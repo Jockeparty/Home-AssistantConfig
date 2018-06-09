@@ -1,0 +1,14 @@
+- alias: "Turn on dehumidifier"
+  initial_state: true
+  hide_entity: false
+  trigger:
+  - above: '64'
+    entity_id: sensor.krypgrunden_vid_avfuktaren_humidity
+    platform: numeric_state
+  action:
+  - entity_id: switch.avfuktaren
+    service: homeassistant.turn_on
+  - service: notify.pushbullet
+    data_template:
+      title: Luftavfuktaren
+      message: har startat

@@ -1,0 +1,144 @@
+sensor.humidity_158d0001b920b1:
+  name:
+  platform: xiaomi_aqara
+  unique_id: humidity158d0001b920b1
+sensor.temperature_158d0001b920b1:
+  name:
+  platform: xiaomi_aqara
+  unique_id: temperature158d0001b920b1
+sensor.illumination_158d0001e41f7c:
+  name:
+  platform: xiaomi_aqara
+  unique_id: lux158d0001e41f7c
+sensor.pressure_158d0001b920b1:
+  name:
+  platform: xiaomi_aqara
+  unique_id: pressure158d0001b920b1
+sensor.illumination_34ce0091de27:
+  name:
+  platform: xiaomi_aqara
+  unique_id: illumination34ce0091de27
+binary_sensor.switch_158d00016d9d52:
+  name:
+  platform: xiaomi_aqara
+  unique_id: status158d00016d9d52
+binary_sensor.switch_158d00019d5855:
+  name:
+  platform: xiaomi_aqara
+  unique_id: status158d00019d5855
+binary_sensor.motion_sensor_158d0001e41f7c:
+  name:
+  platform: xiaomi_aqara
+  unique_id: status158d0001e41f7c
+light.gateway_light_34ce0091de27:
+  name:
+  platform: xiaomi_aqara
+  unique_id: rgb34ce0091de27
+media_player.kitchen:
+  name:
+  platform: sonos
+  unique_id: RINCON_949F3E0EB7C001400
+media_player.living_room:
+  name:
+  platform: sonos
+  unique_id: RINCON_7828CA011D6A01400
+media_player.living_room_speakers:
+  name:
+  platform: cast
+  unique_id: 18717a67-8971-ff49-09b1-249ccd6415eb
+media_player.everywhere:
+  name:
+  platform: cast
+  unique_id: 3ae5cdf3-21a4-4b3b-ac1e-107aeba3fdd8
+media_player.living_room_chromecast:
+  name:
+  platform: cast
+  unique_id: a4a99c26-786b-c808-e159-00720d32caa3
+media_player.grabbarnas_tv:
+  name:
+  platform: cast
+  unique_id: 29ec989e-5e7c-3613-72e9-b015fa1dc1b9
+light.livingroom_spot_3:
+  name:
+  platform: tradfri
+  unique_id: light-7e176d5204400060-65545
+light.hallen_spot_1:
+  name:
+  platform: tradfri
+  unique_id: light-7e176d5204400060-65537
+light.backyard_livingroom:
+  name:
+  platform: tradfri
+  unique_id: light-7e176d5204400060-65552
+light.living_room_spot_1:
+  name:
+  platform: tradfri
+  unique_id: light-7e176d5204400060-65543
+light.kitchen_table_1:
+  name:
+  platform: tradfri
+  unique_id: light-7e176d5204400060-65540
+light.hallen_spot_2:
+  name:
+  platform: tradfri
+  unique_id: light-7e176d5204400060-65538
+light.stairs:
+  name:
+  platform: tradfri
+  unique_id: light-7e176d5204400060-65550
+light.livingroom_spot_2:
+  name:
+  platform: tradfri
+  unique_id: light-7e176d5204400060-65544
+light.hallen_spot_3:
+  name:
+  platform: tradfri
+  unique_id: light-7e176d5204400060-65539
+light.livingroom_spot_6:
+  name:
+  platform: tradfri
+  unique_id: light-7e176d5204400060-65548
+light.livingroom_spot_5:
+  name:
+  platform: tradfri
+  unique_id: light-7e176d5204400060-65547
+light.backyard_bedroom:
+  name:
+  platform: tradfri
+  unique_id: light-7e176d5204400060-65551
+light.livingroom_spot_4:
+  name:
+  platform: tradfri
+  unique_id: light-7e176d5204400060-65546
+light.backyard_office:
+  name:
+  platform: tradfri
+  unique_id: light-7e176d5204400060-65541
+light.livingroom_spotlights:
+  name:
+  platform: tradfri
+  unique_id: group-7e176d5204400060-152054
+light.hallway:
+  name:
+  platform: tradfri
+  unique_id: group-7e176d5204400060-192996
+light.single_lights:
+  name:
+  platform: tradfri
+  unique_id: group-7e176d5204400060-165385
+light.kitchen_table:
+  name:
+  platform: tradfri
+  unique_id: group-7e176d5204400060-175290
+light.backyard:
+  name:
+  platform: tradfri
+  unique_id: group-7e176d5204400060-139707
+light.livingroom:
+  name:
+  platform: tradfri
+  unique_id: group-7e176d5204400060-192997
+binary_sensor.door_window_sensor_158d0001f388e2:
+  name:
+  platform: xiaomi_aqara
+  unique_id: status158d0001f388e2

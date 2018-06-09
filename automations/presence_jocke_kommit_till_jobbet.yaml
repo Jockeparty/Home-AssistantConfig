@@ -1,0 +1,10 @@
+- alias: Jocke kommit till jobbet idag
+  initial_state: true
+  hide_entity: false
+  trigger:
+    platform: state
+    entity_id: !secret googletracker1
+    to: 'Jockes jobb'
+  action:
+  - service: input_boolean.turn_on
+    entity_id: input_boolean.jockejobbat

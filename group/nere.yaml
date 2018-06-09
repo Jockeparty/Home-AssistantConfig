@@ -1,0 +1,18 @@
+Nere:
+  view: yes
+  entities:
+    - sensor.tvattstugan_humidity
+    - sensor.tvattstugan_temperature
+    - switch.kaffebryggaren
+    - switch.kitchen
+    - switch.office
+    - switch.bedroom
+    - switch.laundry
+    - light.stairs
+    - switch.livingroom_window
+    - switch.livingroom_lamp
+    - switch.zacks_window
+    - light.hallway
+    - light.kitchen_table
+    - light.livingroom_spotlights
+#    - light.livingroom_table
