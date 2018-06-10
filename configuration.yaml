@@ -134,3 +134,7 @@ influxdb:
 volvooncall:
   username: !secret volvomail
   password: !secret volvo
+  
+#Shell scripts
+shell_command:
+  dropbox_backup: python /home/homeassistant/Dropbox-Uploader/dropbox_sync.py

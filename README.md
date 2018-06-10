@@ -1,6 +1,8 @@
 My Home Assistant Configuration
 
 Running Hass.io on a Raspberry 3 with Hassbian
+Add-Ons
+Dropbox backup
 
 Hubs
 Ikea Tradfri
@@ -24,7 +26,7 @@ Chromecast Audio *2
 WD TV Live
 Harmony Companion + hub
 Sonos 1 + One
-Synology NAS
+Synology NAS with Grafana and InfluxDB
 
 Security
 Xiaomi Door/Window sensors
