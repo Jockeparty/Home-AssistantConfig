@@ -45,7 +45,7 @@ Xiaomi Temp and humidity sensors
 433MHz Temp and humidity sensors
 Raspberry 2 with RetroPie and Kodi
 Raspberry 2 with V2 PiNoIr (Not used yet)
-Ikea Sparsn‰rs electricity tracker (not integrated)
+Ikea Sparsn√§rs electricity tracker (not integrated)
 Amazon Echo Dot *2
 
 Presence detection
@@ -54,10 +54,11 @@ Unifi AP
 Volvo on Call
 
 Future plans
-Integrate Ikea sparsn‰s to be able to track/trend electricity consumption
+Integrate Ikea sparsn√§s to be able to track/trend electricity consumption
 Use Raspberry PINoIr to track water consumption
 Get Plex up and running
-
+Integrate Roborock withh HASS and Alexa
+Notification whena HASS halts. Urgent!
 
 More to come :)
 
