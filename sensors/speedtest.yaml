@@ -1,8 +1,10 @@
-- platform: speedtest
-  monitored_conditions:
-    - ping
-    - download
-    - upload
-  minute:
-    - 0
-    - 30
+# Inactive right now - I think it slows down the Pi
+
+#- platform: speedtest
+#  monitored_conditions:
+#    - ping
+#    - download
+#    - upload
+#  minute:
+#    - 0
+#    - 30

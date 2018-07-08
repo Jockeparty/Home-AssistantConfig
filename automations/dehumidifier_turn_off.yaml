@@ -5,6 +5,10 @@
     - below: '62'
       entity_id: sensor.krypgrunden_vid_avfuktaren_humidity
       platform: numeric_state
+  condition:
+    condition: state
+    entity_id: input_boolean.dehumidifier
+    state: 'on'
   action:
     - service: homeassistant.turn_off
       entity_id: switch.avfuktaren
@@ -12,3 +16,5 @@
       data_template:
         title: Luftavfuktaren
         message: har stannat
+    - service: input_boolean.turn_off
+      entity_id: input_boolean.dehumidifier
